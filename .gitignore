@@ -162,4 +162,3 @@ cython_debug/
 
 artifacts
 isd_data_mini.zip
-dataset/tasks_1-20_v1-2/hn-10k
