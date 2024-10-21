@@ -23,7 +23,7 @@ from utils import vectorize_stories
 class ModelTraining:
 
     def __init__(self):
-        self.train_epochs = 100
+        self.train_epochs = 300
         self.batch_size = 32
         self.lstm_size = 64
 
