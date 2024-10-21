@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Answering System</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Question Answering System</h1>
-        <form id="qa-form">
-            <label for="story">Story:</label>
-            <textarea id="story" name="story" rows="5" placeholder="Enter the story here..."></textarea>
+        <div class="input-section">
+            <label for="story">Enter Story:</label>
+            <textarea id="story" rows="5" placeholder="Type your story here..."></textarea>
 
-            <label for="query">Query:</label>
-            <input type="text" id="query" name="query" placeholder="Enter your question here...">
+            <label for="query">Enter Query:</label>
+            <input type="text" id="query" placeholder="Type your question here..." />
 
-            <button type="submit">Get Answer</button>
-        </form>
+            <button id="submitBtn">Submit</button>
+        </div>
 
-        <div id="answer-section">
-            <h2>Predicted Answer:</h2>
-            <p id="answer"></p>
+        <div class="output-section" id="output">
+            <!-- Result will be displayed here -->
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
