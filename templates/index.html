@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answering System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Question Answering System</h1>
+        <form id="qa-form">
+            <label for="story">Story:</label>
+            <textarea id="story" name="story" rows="5" placeholder="Enter the story here..."></textarea>
+
+            <label for="query">Query:</label>
+            <input type="text" id="query" name="query" placeholder="Enter your question here...">
+
+            <button type="submit">Get Answer</button>
+        </form>
+
+        <div id="answer-section">
+            <h2>Predicted Answer:</h2>
+            <p id="answer"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
